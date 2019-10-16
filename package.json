@@ -1,0 +1,27 @@
+{
+  "name": "newtwitchapi",
+  "version": "1.0.0",
+  "description": "Node.js wrapper for Twitch's NewTwitchAPI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinVII/newTwitchApi.git"
+  },
+  "keywords": [
+    "twitch",
+    "api"
+  ],
+  "author": "KevinVII",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KevinVII/newTwitchApi/issues"
+  },
+  "homepage": "https://github.com/KevinVII/newTwitchApi#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "config": "^3.2.3"
+  }
+}
