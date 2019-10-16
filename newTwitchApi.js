@@ -1,7 +1,7 @@
 const axios = require('axios');
 const config = require('config');
 
-
+// Pass these arguments to every axios call unless overwritten in method
 axios.defaults.baseURL = 'https://api.twitch.tv/helix';
 axios.defaults.headers = {
   'Accept': 'application/json',

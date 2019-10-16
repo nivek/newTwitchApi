@@ -28,12 +28,30 @@ default.json should contain your clientID and clientSecret so you don't have to 
 ---
 
 ### Example usage
+
+#### Example Request `#`1
 ```js
 var user = ttv.getUser({login: 'shroud'});
 
 user.then((result) => {
   console.log(result);
 })
+```
+#### Example Response `#`1
+```js
+{ id: '37402112',
+  login: 'shroud',
+  display_name: 'shroud',
+  type: '',
+  broadcaster_type: 'partner',
+  description: 'Enjoy these highlights/vods, and remember to follow!',
+  profile_image_url:
+   'https://static-cdn.jtvnw.net/jtv_user_pictures/7ed5e0c6-0191-4eef-8328-4af
+6e4ea5318-profile_image-300x300.png',
+  offline_image_url:
+   'https://static-cdn.jtvnw.net/jtv_user_pictures/f328a514-0cda-4239-9f99-246
+70b7ed7cb-channel_offline_image-1920x1080.png',
+  view_count: 363235361 }
 ```
 
 ### Parameters
