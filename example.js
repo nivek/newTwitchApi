@@ -14,7 +14,7 @@ var options = {
 
 var ttv = new Twitch(options);
 
-// All api calls will return a promise
+// Calls take in an object of parameters and return a promise
 var user = ttv.getUser({login: 'shroud'});
 
 // Utilize .then in order to access the result of your api call.

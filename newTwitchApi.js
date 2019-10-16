@@ -146,7 +146,7 @@ Twitch.prototype.getStreams = async function (params){
         message: 'Double check your parameters'
       })
     } else {
-      return (res.data.data[0]);
+      return(res.data.data)
     }
 
   } catch (err) {
