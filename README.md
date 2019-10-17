@@ -63,3 +63,24 @@ These parameters must be passed along as an object.
 ttv.getStreams({first: '3', game_id: '511224'});
 ```
 ---
+
+### NewTwitchAPI Endpoints Included
+
+|               Endpoint               | Included |            Endpoint           | Included |
+|:------------------------------------:|:--------:|:-----------------------------:|:--------:|
+| Get Extension Analytics              |          | Get Moderator Events          |          |
+| Get Game Analytics                   |          | Get Streams                   |:heavy_check_mark:|
+| Get Bits Leaderboard                 |          | Get Streams Metadata          |          |
+| Get Extension Transactions           |          | Create Stream Marker          |          |
+| Create Clip                          |          | Get Stream Markers            |          |
+| Get Clips                            |:heavy_check_mark:| Get Broadcaster Subscriptions |          |
+| Create Entitlement Grants Upload URL |          | Get All Stream Tags           |          |
+| Get Code Status                      |          | Get Stream Tags               |:heavy_check_mark:|
+| Redeem Code                          |          | Replace Stream Tags           |          |
+| Get Top Games                        |:heavy_check_mark:| Get Users                     |:heavy_check_mark:|
+| Get Games                            |:heavy_check_mark:| Get Users Follows             |          |
+| Check AutoMod Status                 |          | Update User                   |          |
+| Get Banned Events                    |          | Get User Extensions           |          |
+| Get Banned Users                     |          | Get User Active Extensions    |          |
+| Get Moderators                       |          | Update User Extensions        |          |
+| Get Webhook Subscriptions            |          | Get Videos                    |          |

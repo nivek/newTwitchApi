@@ -71,7 +71,7 @@ Twitch.prototype.getTopGames = async function (params){
         message: 'Double check your parameters'
       })
     } else {
-      return (res.data.data[0]);
+      return (res.data);
     }
 
   } catch (err) {
@@ -96,7 +96,7 @@ Twitch.prototype.getGames = async function (params){
         message: 'Double check your parameters'
       })
     } else {
-      return (res.data.data[0]);
+      return (res.data);
     }
 
   } catch (err) {
@@ -121,7 +121,7 @@ Twitch.prototype.getClips = async function (params){
         message: 'Double check your parameters'
       })
     } else {
-      return (res.data.data[0]);
+      return (res.data);
     }
 
   } catch (err) {
@@ -146,7 +146,7 @@ Twitch.prototype.getStreams = async function (params){
         message: 'Double check your parameters'
       })
     } else {
-      return(res.data.data)
+      return(res.data)
     }
 
   } catch (err) {
@@ -171,7 +171,7 @@ Twitch.prototype.getClips = async function (params){
         message: 'Double check your parameters'
       })
     } else {
-      return (res.data.data[0]);
+      return (res.data);
     }
 
   } catch (err) {
