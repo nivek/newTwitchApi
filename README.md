@@ -70,7 +70,7 @@ ttv.getStreams({first: '3', game_id: '511224'});
 |:------------------------------------:|:--------:|:-----------------------------:|:--------:|
 | Get Extension Analytics              |                  | Get Moderator Events          |                  |
 | Get Game Analytics                   |                  | Get Streams                   |:heavy_check_mark:|
-| Get Bits Leaderboard                 |                  | Get Streams Metadata          |                  |
+| Get Bits Leaderboard                 |                  | Get Streams Metadata          |:heavy_check_mark:|
 | Get Extension Transactions           |                  | Create Stream Marker          |                  |
 | Create Clip                          |                  | Get Stream Markers            |                  |
 | Get Clips                            |:heavy_check_mark:| Get Broadcaster Subscriptions |                  |
@@ -78,11 +78,11 @@ ttv.getStreams({first: '3', game_id: '511224'});
 | Get Code Status                      |                  | Get Stream Tags               |:heavy_check_mark:|
 | Redeem Code                          |                  | Replace Stream Tags           |                  |
 | Get Top Games                        |:heavy_check_mark:| Get Users                     |:heavy_check_mark:|
-| Get Games                            |:heavy_check_mark:| Get Users Follows             |                  |
+| Get Games                            |:heavy_check_mark:| Get Users Follows             |:heavy_check_mark:|
 | Check AutoMod Status                 |                  | Update User                   |                  |
 | Get Banned Events                    |                  | Get User Extensions           |                  |
 | Get Banned Users                     |                  | Get User Active Extensions    |                  |
 | Get Moderators                       |                  | Update User Extensions        |                  |
-| Get Webhook Subscriptions            |                  | Get Videos                    |                  |
+| Get Webhook Subscriptions            |                  | Get Videos                    |:heavy_check_mark:|
 
 ---

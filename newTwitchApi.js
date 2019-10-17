@@ -154,10 +154,35 @@ Twitch.prototype.getStreams = async function (params){
   }
 };
 
-Twitch.prototype.getClips = async function (params){
+Twitch.prototype.getStreamsMetaData = async function (params){
   try {
     const res = await axios({
-      url: '/clips',
+      url: '/streams/metadata',
+      params: params,
+      method: 'GET',
+      json: true
+    });
+
+    // Check for response, if no response print error message;
+    if(!res.data.data[0]){
+      console.error({
+        error: 'Bad Request',
+        status: 404,
+        message: 'Double check your parameters'
+      })
+    } else {
+      return(res.data)
+    }
+
+  } catch (err) {
+    console.error(err.response.data);
+  }
+};
+
+Twitch.prototype.getVideos = async function (params){
+  try {
+    const res = await axios({
+      url: '/videos',
       params: params,
       method: 'GET',
       json: true
@@ -183,6 +208,31 @@ Twitch.prototype.getUser = async function (params){
   try {
     const res = await axios({
       url: '/users',
+      params: params,
+      method: 'GET',
+      json: true
+    });
+
+    // Check for response, if no response print error message;
+    if(!res.data.data[0]){
+      console.error({
+        error: 'Bad Request',
+        status: 404,
+        message: 'Double check your parameters'
+      })
+    } else {
+      return (res.data.data[0]);
+    }
+
+  } catch (err) {
+    console.error(err.response.data);
+  }
+};
+
+Twitch.prototype.getUsersFollows = async function (params){
+  try {
+    const res = await axios({
+      url: '/users/follows',
       params: params,
       method: 'GET',
       json: true
