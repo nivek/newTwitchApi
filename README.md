@@ -41,7 +41,7 @@ user.then((result) => {
 // Using async/await
 async function (){
   var user = await ttv.getUser({login: 'shroud'});
-  
+
   console.log(user)
 }
 ```
