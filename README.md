@@ -31,11 +31,19 @@ default.json should contain your clientID and clientSecret so you don't have to 
 
 #### Example Request `#`1
 ```js
+// Using .then()
 var user = ttv.getUser({login: 'shroud'});
 
 user.then((result) => {
   console.log(result);
 })
+
+// Using async/await
+async function (){
+  var user = await ttv.getUser({login: 'shroud'});
+  
+  console.log(user)
+}
 ```
 #### Example Response `#`1
 ```js

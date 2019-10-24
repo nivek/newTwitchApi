@@ -264,5 +264,31 @@ Twitch.prototype.getUsersFollows = async function (params){
 //                                        | |
 //                                        |_|
 
+Twitch.prototype.createClip = async function (params){
+  try {
+    const res = await axios({
+      url: '/clips',
+      params: params,
+      method: 'GET',
+      json: true
+    });
 
+    // Check for response, if no response print error message;
+    if(!res.data.data[0]){
+      console.error({
+        error: 'Bad Request',
+        status: 404,
+        message: 'Double check your parameters',
+        headers: {
+          'Authorization': 'Bearer '
+        }
+      })
+    } else {
+      return (res.data);
+    }
+
+  } catch (err) {
+    console.error(err.response.data);
+  }
+};
 module.exports = Twitch;
