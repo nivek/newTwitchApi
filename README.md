@@ -2,7 +2,7 @@
 # NewTwitchAPI Wrapper
 
 
-
+## Needs to be updated to require auth on all api calls as per new Twitch Rules
 
 ## How to use
 
